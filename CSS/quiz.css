@@ -1,0 +1,115 @@
+main{
+    font-size: 1.2em;
+
+}
+
+#content{
+    margin: 30px 30px 0px 30px;
+    background-color: #fdf8f4;
+    color: #07b7ae;
+}/*
+#paragraph{
+    display: flex;
+    flex-direction: column;
+}*/
+#start{
+    transform: translateX(-250px);
+    background-color: #e4d7ff;
+    margin-left: 100%;
+    min-width: 200px;
+    min-height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 2em;
+}
+#start:hover{
+    background-color: #ffdfaf;
+    animation-name: animateStartBtn;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+#container_1{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+#container_1 > div > img{
+    width: 300px;
+
+}
+#container_1 > div > img:hover{
+    margin-left: 30px;
+    transform: scale(1.2);
+    transition: all 0.4s ease-in-out;
+}
+#container_1 > div > input[type="button" i]{
+    background-color: #e4d7ff;
+    min-width: 100px;
+    min-height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+#container_1 > div > input[type="button" i]:hover{
+    background-color: #ffdfaf;
+}
+#explain{
+    margin: 0px 0px 20px 10px;
+    color: #551a8b;
+    box-shadow: 6px 5px 9px 0px rgb(233, 233, 233);
+}
+#beside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#result{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+#final_score{
+    box-shadow: 6px 5px 9px 0px rgb(233, 233, 233);
+    margin-top: 20px;
+}
+.btn {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #198754;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn:checked,.btn:hover,.btn:active{
+    background-color: transparent;
+    border: 1px solid #07b7ae;
+
+}
+#ok,#next,#finish{
+    width: fit-content;
+    float: right;
+    
+}
+@keyframes animateStartBtn{
+    0%{border-top:1px solid #390096 ;}
+    25%{border-right:1px solid #390096 ;}
+    75%{border-bottom:1px solid #390096 ;}
+    100%{border-left:1px solid #390096 ;}
+}/*
+@media only screen and (max-width:550px){
+    #start{
+
+    }
+}*/
